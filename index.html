@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <title>Portfolio de Jérémy Loubeyre</title>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-md py-6">
+        <nav class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-900">Jérémy Loubeyre</a>
+                <ul class="flex space-x-8">
+                    <li><a href="about.html" class="text-gray-700 hover:text-indigo-600">À propos</a></li>
+                    <li><a href="projects.html" class="text-gray-700 hover:text-indigo-600">Projets</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-indigo-600">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section class="bg-white rounded-lg shadow-lg p-10 text-center">
+            <img src="images/profil.jpg" alt="Votre photo de profil" class="rounded-full w-32 h-32 mx-auto mb-6">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Bonjour, je suis Jérémy Loubeyre</h1>
+            <p class="text-xl text-gray-700 mb-8">
+                Étudiant en BTS SIO (SLAM) | Développeur Web et Logiciel
+            </p>
+            <a href="projects.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-full shadow-md">Voir mes projets</a>
+        </section>
+
+        <section class="py-10">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6 text-center">À Propos de Moi</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Actuellement étudiant en 2ème année de BTS SIO option SLAM au Lycée Chevrollier à Angers[cite: 1], je suis passionné par le développement web et logiciel.
+                    J'ai acquis des compétences solides en **Développement Web** (HTML, CSS, PHP, Javascript, CMS WordPress, Création d'API Rest, Framework Laravel, VueJS, HTMX), **Base de Données** (SQL, MariaDB, NoSQL), et **Développement Applicatif** (C#, Java, Dart Flutter).
+                    Je maîtrise également la **Gestion de Projet** avec des outils comme Trello, Git, et les diagrammes de Gantt, ainsi que les **Systèmes et Réseaux** (serveurs Web/BD, Apache, GLPI, MySQL, Docker, SSH).
+                    <a href="page/about.html" class="text-indigo-600 hover:underline">En savoir plus sur moi...</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Mes Projets Récents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/projet1.jpg" alt="Nom du projet 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Nom du Projet 1</h3>
+                        <p class="text-gray-700 text-sm mb-4">Courte description du projet 1 et des technologies utilisées.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/projet2.jpg" alt="Nom du projet 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Nom du Projet 2</h3>
+                        <p class="text-gray-700 text-sm mb-4">Courte description du projet 2 et des technologies utilisées.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Voir le projet</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="images/projet3.jpg" alt="Nom du projet 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Nom du Projet 3</h3>
+                        <p class="text-gray-700 text-sm mb-4">Courte description du projet 3 et des technologies utilisées.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="projects.html" class="text-indigo-600 hover:underline">Voir tous mes projets</a>
+            </div>
+        </section>
+
+        <section class="py-10">
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">Contactez-moi</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    N'hésitez pas à me contacter pour discuter d'opportunités d'alternance ou de projets web.
+                    Vous pouvez me joindre par email à <a href="mailto:jeremy.loubeyre44@gmail.com" class="text-indigo-600 hover:underline">jeremy.loubeyre44@gmail.com</a> [cite: 1] ou par téléphone au 07 67 96 37 24[cite: 1].
+                    <a href="contact.html" class="text-indigo-600 hover:underline">Aller à la page de contact</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-6 text-center text-gray-700">
+        <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
