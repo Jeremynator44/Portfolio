@@ -5,153 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <title>À Propos de Jérémy Loubeyre</title>
+    <script src="darkLightCache.js"></script>
+    <script>tailwind.config = {darkMode: 'class'}</script>
+    <link rel="stylesheet" href="style.css">
+    <title>À Propos</title>
 </head>
 
-<body class="bg-gray-50 font-sans">
-    <header class="bg-white shadow-md py-6">
-        <nav class="container mx-auto px-6">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-bold text-gray-900">Jérémy Loubeyre</a>
-                <ul class="flex space-x-8">
-                    <li><a href="index.html" class="text-gray-700 hover:text-indigo-600">Accueil</a></li>
-                    <li><a href="projects.html" class="text-gray-700 hover:text-indigo-600">Projets</a></li>
-                    <li><a href="contact.html" class="text-gray-700 hover:text-indigo-600">Contact</a></li>
-                </ul>
-            </div>
+<body class="relative font-sans text-gray-800 dark:text-gray-200">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <nav class="backdrop-blur bg-white/80 dark:bg-gray-800/70 shadow-md rounded-full px-6 py-3 flex items-center gap-6 text-sm text-gray-700 dark:text-gray-300 font-medium">
+            <a href="index.html" class="hover:text-indigo-600 transition">Accueil</a>
+            <a href="projects.html" class="hover:text-indigo-600 transition">Projets</a>
+            <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            <button id="theme-toggle" class="ml-2 text-xl hover:text-yellow-400 dark:hover:text-white transition" aria-label="Toggle dark mode">
+                <img id="theme-icon" src="image/iconsDark.png" alt="Thème sombre" class="w-6 h-6">
+            </button>
         </nav>
     </header>
 
-    <main class="container mx-auto px-6 py-12">
-        <section class="mb-10 text-center">
-            <h1 class="text-3xl font-bold text-gray-900 mb-6">À Propos de Moi</h1><br>
-            <p class="text-gray-700 leading-relaxed mb-8 text-justify">
-                Passionné par l'univers du développement web et logiciel, je suis actuellement en 2ème année de BTS SIO 
-                option SLAM au Lycée Chevrollier à Angers, où j'approfondis mes compétences dans la création d'applications 
-                et de solutions numériques. 
-                <br><br> Mon parcours est guidé par une volonté d'apprendre et de maîtriser les 
-                technologies du monde numérique actuel, allant du front-end au back-end, des bases de données à la 
-                gestion de projet. 
-                <br><br> En vue de l'année 2025-2026, je recherche activement une alternance pour mettre en 
-                pratique ces compétences et contribuer à des projets innovants et stimulants.
-            </p>
+    <main><br><br><br><br>
+        <!-- Section Présentation -->
+
+        <section class="pb-20 lg:pt-10 px-6 md:px-16 lg:px-64 flex flex-col-reverse md:flex-row gap-10">
             
-            <div class="border-t border-b border-gray-200 text-center mt-8  border-gray-300 p-4 inline-block">
-                <a href="pdf/Jeremy-Loubeyre-CV.pdf" download
-                   class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-md inline-block">
-                    Télécharger mon CV
-                </a>
+            <!-- Colonne gauche : Présentation -->
+            
+            <div class="md:w-3/5 space-y-9">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Jérémy Loubeyre</h1><br>
+
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Je suis étudiant en fin de 2ᵉ année de BTS SIO option SLAM au Lycée Chevrollier à Angers. <br><br>
+                Passionné par le développement web et logiciel, j’aime apprendre de nouvelles technologies et créer des projets fun et utiles. Je suis également à la recherche d’une entreprise pour m'accueillir en alternance en vue de l'année 2025–2026.
+                </p>
+
+                <hr class="my-6 border-gray-400" />
+
+                <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Diplômes et Formations</h2>
+                <ul class="space-y-4 text-sm">
+                    <li>
+                        <div class="text-lg font-medium">BTS SIO - Spécialité SLAM (2023–2025)</div>
+                        <div class="text-lg text-gray-500 dark:text-gray-400">Lycée Chevrollier, Angers</div>
+                    </li>
+                    <li>
+                        <div class="text-lg font-medium">Attestation de suivi SecNum Académie</div>
+                        <div class="text-lg text-gray-500 dark:text-gray-400">MOOC ANSSI Sécurité Numérique</div>
+                    </li>
+                    <li>
+                        <div class="text-lg font-medium">Certificat en Cyber Sécurité 2023</div>
+                    </li>
+                    <li>
+                        <div class="text-lg font-medium">Baccalauréat Général - Spécialités NSI et Mathématiques (2020-2023)</div>
+                        <div class="text-lg text-gray-500 dark:text-gray-400">Lycée Joubert Emilien Maillard, Ancenis</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Colonne droite : Photo + Expérience -->
+        
+            <div class="md:w-2/5 flex flex-col items-center mt-20 space-y-6">
+                <img src="image\profil.png" alt="Jérémy Loubeyre" class="w-40 h-40 rounded-xl shadow-lg object-cover">
+
+                <div class="w-200 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 p-6 rounded-xl shadow-md lg:px-10 space-y-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Expérience Professionnelle</h2>
+
+                    <div class="flex items-center space-x-4">
+                        <img src="image/logoManitou.png" alt="Manitou Group" class="w-14 h-14 rounded-lg object-contain bg-white dark:bg-gray-700 p-1 shadow" />
+                        <div>
+                            <div class="font-medium text-gray-800 dark:text-white">Manitou Group</div>
+                            <div class="text-gray-500 dark:text-gray-400 text-sm">Stage Développeur Front / Back Java (7 semaines)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="image/logoEM2.png" alt="EM2 Tupack" class="w-14 h-14 rounded-lg object-contain bg-white dark:bg-gray-700 p-1 shadow" />
+                        <div>
+                            <div class="font-medium text-gray-800 dark:text-white">EM2 Tupack</div>
+                            <div class="text-gray-500 dark:text-gray-400 text-sm">Emploi Informatique : Migration données d'ERP (2 semaines)</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <img src="image/logoEM2.png" alt="EM2 Tupack" class="w-14 h-14 rounded-lg object-contain bg-white dark:bg-gray-700 p-1 shadow" />
+                        <div>
+                            <div class="font-medium text-gray-800 dark:text-white">EM2 Tupack</div>
+                            <div class="text-gray-500 dark:text-gray-400 text-sm">Stage d'Informatique : Migration données d'ERP (6 semaines)</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <img src="image/logoManitou.png" alt="CLPR Manitou" class="w-14 h-14 rounded-lg object-contain bg-white dark:bg-gray-700 p-1 shadow" />
+                        <div>
+                            <div class="font-medium text-gray-800 dark:text-white">CLPR Manitou</div>
+                            <div class="text-gray-500 dark:text-gray-400 text-sm">Préparateur de commandes (2023: Juillet - Août - Novembre / 2024: Mars - Juillet - Août)</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <!-- Section Compétences -->
+        
+        <section class="pb-20 px-6 pt-10 lg:pt-0 md:px-16 lg:px-64">
+            <div class="md:w-full">
+                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Compétences</h2>
+                <br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        <br>
-
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Diplômes et Formations</h2>
-            <div class="grid grid-cols-1 gap-4">
-                <div class="pb-4">
-                    <h3 class="font-semibold text-gray-800">BTS SIO - Spécialité SLAM</h3>
-                    <p class="text-gray-700">Lycée Chevrollier - Angers (2023-2025) - 2ème année</p>
-                </div>
-                <div class="pb-4">
-                    <h3 class="font-semibold text-gray-800">Attestation de suivi SecNum Académie - MOOC ANSSI</h3>
-                    <p class="text-gray-700">Sécurité Numérique</p>
-                </div>
-                <div class="pb-4">
-                    <h3 class="font-semibold text-gray-800">Certificat en Cyber Sécurité</h3>
-                    <p class="text-gray-700">2023</p>
-                </div>
-                <div class="pb-4">
-                    <h3 class="font-semibold text-gray-800">Baccalauréat Général - Spécialités NSI et Mathématiques</h3>
-                    <p class="text-gray-700">Lycée Joubert Maillard - Ancenis (2020-2023)</p>
-                </div>
-            </div>
-        </section>
-
-        <br><br>
-
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Expérience Professionnelle</h2>
-            <div class="grid grid-cols-1 gap-6">
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden flex items-center p-4">
-                    <img src="image/logoManitou.png" alt="MANITOU GROUP"
-                        class="w-20 h-20 mr-4 rounded-lg object-contain bg-gray-100 p-2">
-                    <div>
-                        <h3 class="font-semibold text-lg text-gray-900">Stage Développeur Front / Back Java</h3>
-                        <p class="text-gray-700 text-sm mb-2">MANITOU GROUP - Ancenis, France (7 semaines)</p>
-                        <p class="text-gray-600 text-xs">Suite Google / Eclipse RCP / Talend</p>
+                    <div class="border-b border-gray-400 pb-4"><br>
+                        <h3 class="font-semibold text-gray-800 dark:text-white">Développement Web</h3>
+                        <p class="text-gray-700 dark:text-gray-300">
+                            HTML, CSS, PHP, Javascript, CMS type WordPress, Création d'API Rest,
+                            Framework Laravel, VueJS, HTMX
+                        </p>
                     </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden flex items-center p-4">
-                    <img src="image/logoEM2.png" alt="EM2 Tupack"
-                        class="w-20 h-20 mr-4 rounded-lg object-contain bg-gray-100 p-2">
-                    <div>
-                        <h3 class="font-semibold text-lg text-gray-900">Emploi Informatique : Migration données d'ERP</h3>
-                        <p class="text-gray-700 text-sm mb-2">EM2 Tupack - Ancenis, France (2 semaines)</p>
-                        <p class="text-gray-600 text-xs">Suite Microsoft / Softub, GESCOM/MCA</p>
+                    <div class="border-b border-gray-400 pb-4">
+                        <h3 class="font-semibold text-gray-800 dark:text-white">Développement Application</h3>
+                        <p class="text-gray-700 dark:text-gray-300">
+                            C# sous Visual Studio, Java sous Eclipse RCP, Programmation Orienté Objet,
+                            Mobile en Dart Flutter sous Android Studio
+                        </p>
                     </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden flex items-center p-4">
-                    <img src="image/logoEM2.png" alt="EM2 Tupack"
-                        class="w-20 h-20 mr-4 rounded-lg object-contain bg-gray-100 p-2">
-                    <div>
-                        <h3 class="font-semibold text-lg text-gray-900">Stage d'Informatique : Migration données d'ERP</h3>
-                        <p class="text-gray-700 text-sm mb-2">EM2 Tupack - Ancenis, France (6 semaines)</p>
-                        <p class="text-gray-600 text-xs">Suite Microsoft / Softub, GESCOM/MCA</p>
+                    <div class="border-b border-gray-400 pb-4">
+                        <h3 class="font-semibold text-gray-800 dark:text-white">Gestion de Projet</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Planification Trello, Outils de versionning Git, Diagramme de Gantt,
+                            Versionning: GitLab, GitHub</p>
                     </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden flex items-center p-4">
-                    <img src="image/logoManitou.png" alt="MANITOU GROUP"
-                        class="w-20 h-20 mr-4 rounded-lg object-contain bg-gray-100 p-2">
-                    <div>
-                        <h3 class="font-semibold text-lg text-gray-900">Préparateur de commandes</h3>
-                        <p class="text-gray-700 text-sm mb-2">CLPR MANITOU GROUP - Ancenis, France</p>
-                        <p class="text-gray-600 text-xs">2023: Juillet - Août - Novembre / 2024: Mars - Juillet - Août</p>
+                    <div class="border-b border-gray-400 pb-4">
+                        <h3 class="font-semibold text-gray-800 dark:text-white">Systèmes et Réseaux</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Mise en place de serveurs distants Web et BD sous Windows et Linux: Apache,
+                            GLPI, MySQL, Docker, Utilisation de SSH</p>
                     </div>
-                </div>
-
-            </div>
-        </section>
-
-        <br><br>
-
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Compétences</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="border-b border-gray-200 pb-4"><br>
-                    <h3 class="font-semibold text-gray-800">Développement Web</h3>
-                    <p class="text-gray-700">HTML, CSS, PHP, Javascript, CMS type WordPress, Création d'API Rest,
-                        Framework Laravel, VueJS, HTMX</p>
-                </div>
-                <div class="border-b border-gray-200 pb-4">
-                    <h3 class="font-semibold text-gray-800">Base de Données</h3>
-                    <p class="text-gray-700">SQL, MariaDB, NoSQL</p>
-                </div>
-                <div class="border-b border-gray-200 pb-4">
-                    <h3 class="font-semibold text-gray-800">Développement Application</h3>
-                    <p class="text-gray-700">C# sous Visual Studio, Java sous Eclipse RCP, Programmation Orienté Objet,
-                        Mobile en Dart Flutter sous Android Studio</p>
-                </div>
-                <div class="border-b border-gray-200 pb-4">
-                    <h3 class="font-semibold text-gray-800">Gestion de Projet</h3>
-                    <p class="text-gray-700">Planification Trello, Outils de versionning Git, Diagramme de Gantt,
-                        Versionning: GitLab, GitHub</p>
-                </div>
-                <div class="border-gray-200 pb-4">
-                    <h3 class="font-semibold text-gray-800">Systèmes et Réseaux</h3>
-                    <p class="text-gray-700">Mise en place de serveurs distants Web et BD sous Windows et Linux: Apache,
-                        GLPI, MySQL, Docker, Utilisation de SSH</p>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white">Base de Données</h3>
+                        <p class="text-gray-700 dark:text-gray-300">SQL, MariaDB, NoSQL</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="darkLightMode.js"></script>
 </body>
 
-<footer class="bg-gray-100 py-6 text-center text-gray-700">
+<footer class="mt-20 bg-gray-50 dark:bg-gray-900 bg-opacity-85 dark:bg-opacity-85 py-6 text-center text-gray-700 dark:text-gray-400">
     <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
 </footer>
 
