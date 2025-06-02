@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="darkLightCache.js"></script>
     <script>tailwind.config = {darkMode: 'class'}</script>
     <link rel="stylesheet" href="style.css">
@@ -28,7 +29,7 @@
             <p class="text-xl text-gray-500 dark:text-gray-400 mb-8">
                 Étudiant en BTS SIO (SLAM) | Développeur Web et Logiciel
             </p><br>
-            <a href="about.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-full shadow-md">Voir mon profil</a>
+            <a href="pdf/Jeremy-Loubeyre-CV.pdf" download class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-full shadow-md">Télécharger mon CV</a>
         </section>
 
         <section class="py-10 lg:px-20">
@@ -37,8 +38,7 @@
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed lg:mx-32 mb-6">
                     Actuellement étudiant en 2ème année de BTS SIO option SLAM au Lycée Chevrollier à Angers, je suis passionné par le développement web et logiciel.
                     <br><br>J'ai acquis des compétences solides en : <br> &nbsp;&nbsp;&nbsp;- Développement Web (HTML, CSS, PHP, Javascript, CMS WordPress, &nbsp;&nbsp;&nbsp;Création d'API Rest, Framework Laravel, VueJS, HTMX) <br> &nbsp;&nbsp;&nbsp;- Base de Données (SQL, MariaDB, NoSQL) <br> &nbsp;&nbsp;&nbsp;- Développement Applicatif (C#, Java, Dart Flutter)
-                    <br><br>Je maîtrise également la gestion de projet avec des outils comme Trello, Git, et les diagrammes de Gantt, ainsi que les Systèmes et Réseaux (serveurs Web/BD, Apache, GLPI, MySQL, Docker, SSH).
-                    <a href="page/about.html" class="text-indigo-600 hover:underline">En savoir plus sur moi...</a>
+                    <br><br>Je maîtrise également la gestion de projet avec des outils comme Trello, Git, et les diagrammes de Gantt, ainsi que les Systèmes et Réseaux (serveurs Web/BD, Apache, GLPI, MySQL, Docker, SSH).                
                 </p>
             </div>
         </section>
@@ -76,7 +76,23 @@
     <script src="darkLightMode.js"></script>
 </body>
 
-<footer class="bg-gray-50 dark:bg-gray-900 bg-opacity-85 dark:bg-opacity-85 py-6 text-center text-gray-700 dark:text-gray-400">
-    <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+<footer class="bg-gray-50 dark:bg-gray-900 py-6 text-center text-gray-700 dark:text-gray-400 mt-10">
+    <div class="flex flex-col lg:flex-row items-center justify-between px-6 max-w-2xl mx-auto">
+        <p class="lg:mb-0">&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+
+        <!-- Réseaux sociaux -->
+        <div class="flex space-x-5 text-gray-600 dark:text-gray-300">
+        <a href="https://github.com/Jeremynator44" target="_blank" aria-label="GitHub"
+            class="hover:text-indigo-600 transition"><i data-lucide="github" class="w-5 h-5"></i></a>
+
+        <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-loubeyre-3416362b7" target="_blank" aria-label="LinkedIn"
+            class="hover:text-indigo-600 transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+
+        <a href="mailto:jeremy.loubeyre44@gmail.com" aria-label="Email"
+            class="hover:text-indigo-600 transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+        </div>
+    </div>
+    <script>lucide.createIcons();</script>
 </footer>
+
 </html>
