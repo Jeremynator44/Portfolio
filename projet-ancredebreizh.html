@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L'ancre De Breizh | Projet</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <nav
+            class="backdrop-blur bg-white/80 dark:bg-gray-800/70 shadow-md rounded-full px-6 py-3 flex items-center gap-6 text-sm font-medium">
+            <a href="index.html" class="hover:text-indigo-600 transition">Accueil</a>
+            <a href="about.html" class="hover:text-indigo-600 transition">Profil</a>
+            <a href="projects.html" class="hover:text-indigo-600 transition">Projets</a>
+            <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            <button id="theme-toggle" class="lg:ml-2 text-xl hover:text-yellow-400 dark:hover:text-white transition" aria-label="Toggle dark mode">
+                <img id="theme-icon" src="image/iconsDark.png" alt="Thème sombre" class="w-6 h-6">
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-32 px-6 md:px-16 lg:px-32 pb-20">
+        <section class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-14 space-y-10">
+            <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white mb-6">L’ancre de Breizh</h1>
+            <img src="image/ProjetAncreDeBreizh.png" alt="L’ancre de Breizh" class="lg:mx-24 rounded-xl shadow-lg mb-10" />
+
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                <strong>Technologies :</strong> Flutter, Dart, Android Studio<br />
+                <strong>Type :</strong> Application mobile<br />
+                <strong>But :</strong> Permettre à un restaurant breton de gérer son activité mobile
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Le projet <strong>L’ancre de Breizh</strong> est une application mobile développée avec Flutter. Elle répond au besoin d’un 
+                restaurant fictif qui souhaite moderniser sa communication, fluidifier les commandes pour les serveurs.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Fonctionnalités principales :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Navigation fluide entre les rubriques : accueil, carte, réservation</li>
+                    <li>Formulaire de commande intégré avec gestion des quantités</li>
+                    <li>Design adaptatif compatible Android / iOS</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Mon rôle :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Conception du routing vers l'API entre Flutter et la base de donnée</li>
+                    <li>Développement de l'applications (interface, menus déroulants, checkbox, filtre...)</li>
+                    <li>Création des assets UI et intégration responsive</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Ce projet m’a fait découvrir les contraintes d’une UI mobile, l’importance de l’ergonomie tactile et l’écosystème Flutter (state management, Material design, etc.).
+            </p>
+
+            <a href="projects.html"
+                class="inline-block mt-10 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold shadow">
+                ← Retour aux projets
+            </a>
+        </section>
+    </main>
+    <script src="darkLightMode.js"></script>
+    <footer class="bg-gray-50 dark:bg-gray-900 py-6 text-center text-gray-700 dark:text-gray-400 mt-10">
+        <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

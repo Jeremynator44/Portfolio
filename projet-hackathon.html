@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tous au Sport ! | Projet</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <nav
+            class="backdrop-blur bg-white/80 dark:bg-gray-800/70 shadow-md rounded-full px-6 py-3 flex items-center gap-6 text-sm font-medium">
+            <a href="index.html" class="hover:text-indigo-600 transition">Accueil</a>
+            <a href="about.html" class="hover:text-indigo-600 transition">Profil</a>
+            <a href="projects.html" class="hover:text-indigo-600 transition">Projets</a>
+            <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            <button id="theme-toggle" class="lg:ml-2 text-xl hover:text-yellow-400 dark:hover:text-white transition" aria-label="Toggle dark mode">
+                <img id="theme-icon" src="image/iconsDark.png" alt="Thème sombre" class="w-6 h-6">
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-32 px-6 md:px-16 lg:px-32 pb-20">
+        <section class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-14 space-y-10">
+            <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white mb-6">Tous au Sport !</h1>
+            <img src="image/VitrineFinalHackathon.png" alt="Tous au Sport" class="lg:mx-24 rounded-xl shadow-lg mb-10" />
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                <strong>Technologies :</strong> HTML, CSS, JavaScript<br />
+                <strong>Contexte :</strong> Hackathon : 4 jours pour réaliser le projet de site web qui cartographie les différents équipements 
+                sportifs de la ville d'Angers ainsi que ses parkings et nombre de places en temps réel.<br />
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                <strong>Tous au Sport !</strong> est un site web destiné aux citoyens de la ville d'Angers souhaitant consulter les équipements 
+                sportifs disponibles et leur accessibilité. L'objectif était de rendre l'information municipale claire et exploitable rapidement.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Fonctionnalités intégrées :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Cartographie des infrastructures sportives (gymnases, stades, city-stades, etc.)</li>
+                    <li>Affichage d’icônes pour les équipements, parkings, bornes vélo</li>
+                    <li>Indication de disponibilité simulée en temps réel</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Stack technique :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>JavaScript pur pour le filtrage et le tri</li>
+                    <li>Leaflet pour la carte interactive</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Ce projet m’a appris à gérer des données géographiques, manipuler et structurer efficacement un front-end clair pour des utilisateurs non techniques.
+            </p>
+
+
+            <a href="projects.html"
+                class="inline-block mt-10 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold shadow">
+                ← Retour aux projets
+            </a>
+        </section>
+    </main>
+    <script src="darkLightMode.js"></script>
+    <footer class="bg-gray-50 dark:bg-gray-900 py-6 text-center text-gray-700 dark:text-gray-400 mt-10">
+        <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

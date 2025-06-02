@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Hackat'Innov | Projet</title>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <nav
+            class="backdrop-blur bg-white/80 dark:bg-gray-800/70 shadow-md rounded-full px-6 py-3 flex items-center gap-6 text-sm text-gray-700 dark:text-gray-300 font-medium">
+            <a href="index.html" class="hover:text-indigo-600 transition">Accueil</a>
+            <a href="about.html" class="hover:text-indigo-600 transition">Profil</a>
+            <a href="projects.html" class="hover:text-indigo-600 transition">Projets</a>
+            <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+            <button id="theme-toggle" class="lg:ml-2 text-xl hover:text-yellow-400 dark:hover:text-white transition" aria-label="Toggle dark mode">
+                <img id="theme-icon" src="image/iconsDark.png" alt="Thème sombre" class="w-6 h-6">
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-32 px-6 md:px-16 lg:px-32 pb-20">
+        <section class="max-w-5xl mx-auto bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 md:p-14 space-y-10">
+            <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white mb-6">Hackat'Innov</h1>
+
+            <img src="image/ProjetHackatInnov.png" alt="Hackat'Innov" class=" rounded-xl shadow-lg mb-10" />
+
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                <strong>Technologies :</strong> C#, .NET, Windows Forms, MySQL, PHPMyAdmin<br />
+                <strong>Période :</strong> 9 semaines
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                <strong>Hackat’Innov</strong> est une plateforme de gestion complète de hackathons. Développée en C# avec .NET sous Windows Forms, elle vise à faciliter l’organisation d’événements collaboratifs autour du développement informatique. Le projet a été réalisé en équipe dans le cadre d’une simulation professionnelle.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                L’application répond à des besoins concrets de gestion :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>Inscription et désinscription des équipes</li>
+                    <li>Création, modification et archivage des hackathons</li>
+                    <li>Gestion des membres, équipes et données associées</li>
+                    <li>Sécurité renforcée avec connexion administrateur et double authentification</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                En tant que développeur, j’ai travaillé sur :
+                <ul class="list-disc ml-6 mt-2">
+                    <li>L’authentification (login sécurisé + 2FA)</li>
+                    <li>La gestion dynamique des hackathons (CRUD complet)</li>
+                    <li>Les formulaires de création / modification avec pré-remplissage</li>
+                    <li>Le système de notification par mail lors de désinscription</li>
+                </ul>
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                La base de données est hébergée via Dokploy, l'accès administrateur est sécurisé, et les actions sensibles sont toujours confirmées pour éviter les erreurs (pop-up, vérifications...).
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                <strong>Points positifs :</strong> nombreuses fonctionnalités ajoutées, sécurité solide, bonne architecture.  
+                <br><strong>Axes d’amélioration :</strong> ajout d’un module Jury, tableaux de bord d’analyse, refonte graphique.
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                <strong>Outils utilisés :</strong> Visual Studio 2022, GitHub, Trello, Dokploy, PHPMyAdmin
+            </p>
+
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Ce projet m’a permis de consolider mes compétences en programmation orientée objet, structuration de formulaires dynamiques, sécurisation d’accès et en gestion collaborative de projet. L’application est une base robuste et évolutive, destinée à être enrichie.
+            </p>
+
+            <a href="projects.html"
+                class="inline-block mt-10 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-semibold shadow">
+                ← Retour aux projets
+            </a>
+        </section>
+    </main>
+
+    <script src="darkLightMode.js"></script>
+
+    <footer class="bg-gray-50 dark:bg-gray-900 py-6 text-center text-gray-700 dark:text-gray-400 mt-10">
+        <p>&copy; 2025 Jérémy Loubeyre. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
